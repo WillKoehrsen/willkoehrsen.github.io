@@ -464,7 +464,11 @@ The below code is created with [repl.it](http://repl.it/) and presents a
 complete interactive running example of the random forest in Python. Feel free
 to run and change the code (loading the packages might take a few moments).
 
-<span class="figcaption_hack">Complete Python example of random forest.</span>
+<div class="code-container">
+    <iframe src="https://repl.it/@WillKoehrsen/Random-Forest-Tutorial?lite=true">
+    </iframe>
+</div>
+
 
 ### Conclusions
 
@@ -515,9 +519,3 @@ reached on Twitter [@koehrsen_will](http://twitter.com/@koehrsen_will). This
 article was originally published on [enlight](https://enlight.nyc/), an
 open-source community for studying machine learning. I would like to thank
 enlight and also [repl.it ](http://repl.it/)for hosting the code in the article.
-
-
-<div class="video-container">
-    <iframe src="https://repl.it/@WillKoehrsen/Random-Forest-Tutorial?lite=true">
-    </iframe>
-</div>
