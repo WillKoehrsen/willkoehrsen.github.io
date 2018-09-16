@@ -127,6 +127,7 @@ img {
   margin-right: auto;
 }
 
+# Image comments
 img + em { 
     display: block; 
     text-align: center;
@@ -166,13 +167,15 @@ img + em {
     clear: both;
 }
 
+# Holding interactive code
 iframe {
 	height: 100%;
     width: 100%;
     frameborder: 5px;
  }
  
- .video-container {
+ # Holding interactive code
+ .code-container {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 90px;
