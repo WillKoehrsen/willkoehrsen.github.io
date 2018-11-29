@@ -1,5 +1,5 @@
 const mediumToMarkdown = require('medium-to-markdown');
  
-mediumToMarkdown.convertFromUrl("https://medium.com/@williamkoehrsen/transfer-learning-with-convolutional-neural-networks-in-pytorch-dd09190245ce").then(function (markdown) {
+mediumToMarkdown.convertFromUrl("https://towardsdatascience.com/estimating-probabilities-with-bayesian-modeling-in-python-7144be007815").then(function (markdown) {
   console.log(markdown); //=> Markdown content of medium post
 });
