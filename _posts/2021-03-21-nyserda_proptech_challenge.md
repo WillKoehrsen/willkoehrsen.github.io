@@ -23,26 +23,28 @@ While some tenant meters surprisingly show an increase in consumption with a red
 
 The below stats show the expected change in consumption (positive values indicate a decrease in consumption) for every 10% decrease in occupancy.
 
-Tenant Meter    Decrease in consumption % for every 10% decrease in occupancy
-1-001                                     4.15
-1-002                                     2.77
-1-003                                     2.97
-1-004                                     3.55
-1-005                                     1.61
-1-006                                     4.47
-1-007                                     3.31
-1-008                                     2.47
-1-009                                     1.27
-1-010                                     3.15
-1-011                                     6.66
-1-012                                    -0.66
-1-013                                    -0.99
-1-014                                     2.43
-1-015                                     3.88
-1-016                                     5.89
-1-017                                     0.13
-1-018                                     5.87
-Building                                  3.05
+| Tenant Meter | Decrease in consumption % for every 10% decrease in occupancy |
+|--------------|---------------------------------------------------------------|
+| 1-001        | 4.15                                                          |
+| 1-002        | 2.77                                                          |
+| 1-003        | 2.97                                                          |
+| 1-004        | 3.55                                                          |
+| 1-005        | 1.61                                                          |
+| 1-006        | 4.47                                                          |
+| 1-007        | 3.31                                                          |
+| 1-008        | 2.47                                                          |
+| 1-009        | 1.27                                                          |
+| 1-010        | 3.15                                                          |
+| 1-011        | 6.66                                                          |
+| 1-012        | -0.66                                                         |
+| 1-013        | -0.99                                                         |
+| 1-014        | 2.43                                                          |
+| 1-015        | 3.88                                                          |
+| 1-016        | 5.89                                                          |
+| 1-017        | 0.13                                                          |
+| 1-018        | 5.87                                                          |
+| Building     | 3.05                                                          |
+
 
 
 On a technical note, the average Pearson's correlation coefficient (a standard method of measuring correlations) between the building-wide reduction in occupancy and tenant consumption is 0.60, a strongly positive correlation (as the reduction in occupancy increases, the reduction in consumption increases). As an interesting note, this value is negative for some meters, which display an increase in consumption with decreases in occupancy.
@@ -59,26 +61,28 @@ The Mean Absolute Error (MAE) is measured using one-day-ahead rolling validation
 
 The MAE for predicting the entire building's consumption (with the ConEd Electric data) is 23.5 kWh, representing a 3.84% error on the 20 validation dates. That is, we can predict the building's consumption on a given day with 96%+ accuracy at each 15-minute interval.
 
-meter       Mean Absolute Error (kWh)
-1-001               0.10
-1-002               0.15
-1-003               0.05
-1-004               0.28
-1-005               0.10
-1-006               0.12
-1-007               0.95
-1-008               0.15
-1-009               0.07
-1-010               0.05
-1-011               0.05
-1-012               0.06
-1-013               0.05
-1-014               0.04
-1-015               0.05
-1-016               0.04
-1-017               0.10
-1-018               0.13
-Building            23.50
+| meter    | Mean Absolute Error (kWh) |
+|----------|---------------------------|
+| 1-001    | 0.10                      |
+| 1-002    | 0.15                      |
+| 1-003    | 0.05                      |
+| 1-004    | 0.28                      |
+| 1-005    | 0.10                      |
+| 1-006    | 0.12                      |
+| 1-007    | 0.95                      |
+| 1-008    | 0.15                      |
+| 1-009    | 0.07                      |
+| 1-010    | 0.05                      |
+| 1-011    | 0.05                      |
+| 1-012    | 0.06                      |
+| 1-013    | 0.05                      |
+| 1-014    | 0.04                      |
+| 1-015    | 0.05                      |
+| 1-016    | 0.04                      |
+| 1-017    | 0.10                      |
+| 1-018    | 0.13                      |
+| Building | 23.50                     |
+
 
 [Plot of mean absolute error from validation](./html_plots/mean_absolute_error_by_meter_bar_plot.html)
 
@@ -93,6 +97,7 @@ Although there are likely other factors at play, the most efficient operation oc
 The energy efficiency was higher during the week than on weekends which appears to be because the peak load during the day was decreased by a more significant percentage than the baseload overnight and on weekends.
 
 [Plot of before covid to during covid over a week](./html_plots/consumption_before_covid_during_covid_week_comparison.html)
+
 [Plot of feature importances](./html_plots/feature_values.html)
 
 ### 5 What is the most energy-efficient occupancy level as a percentage of max occupancy provided (i.e., occupancy on 2/10/20)?
