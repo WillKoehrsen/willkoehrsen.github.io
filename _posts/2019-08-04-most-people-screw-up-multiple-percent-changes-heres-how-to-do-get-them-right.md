@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Most People Screw Up Multiple Percent Changes. Here's How To Do Get Them Right."
+title: "Most People Screw Up Multiple Percent Changes. Here's How To Get Them Right."
 date: 2019-08-04
 categories:
   - statistics
