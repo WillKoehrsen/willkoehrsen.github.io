@@ -2,18 +2,23 @@
 published: true
 title: "NYSERDA Proptech Tenant Energy Data Challenge"
 date: 2021-03-21
+permalink: /nyserda-proptech-tenant-energy-data-challenge/
 categories:
   - energy
   - data-science
 ---
 
-## Problem Statements
+![]({{ site.baseurl }}/images/before_vs_during_covid_consumption_comparison.png)
 
+These are my answers to the [NYSERDA Tenant Energy Data Challenge](https://www.proptechchallenge.com/nyserda-tenant-energy-data).
+
+The [GitHub Repo](https://github.com/WillKoehrsen/nyserda-proptech-challenge) contains the code used in this project.
+## Problem Statements
 ### 1 What is your forecasted consumption across all 18 tenant usage meters for the 24 hours of 8/31/20 in 15 minute intervals (1728 predictions)?
 
 The forecasted consumption is submitted as a csv to the challenge submission form.
 
-[Plot of forecasted consumption vs average consumption during covid.](./html_plots/forecasted_consumption_comparison.html)
+[Plot of forecasted consumption vs average consumption during covid.]({{ site.baseurl }}/html_plots/forecasted_consumption_comparison.html)
 
 ### 2 How correlated are building-wide occupancy and tenant consumption?
 
@@ -49,7 +54,7 @@ The below stats show the expected change in consumption (positive values indicat
 
 On a technical note, the average Pearson's correlation coefficient (a standard method of measuring correlations) between the building-wide reduction in occupancy and tenant consumption is 0.60, a strongly positive correlation (as the reduction in occupancy increases, the reduction in consumption increases). As an interesting note, this value is negative for some meters, which display an increase in consumption with decreases in occupancy.
 
-[Plot of consumption change vs occupancy change](./html_plots/consumption_change_vs_occupancy_change_scatter.html)
+[Plot of consumption change vs occupancy change]({{ site.baseurl }}/html_plots/consumption_change_vs_occupancy_change_scatter.html)
 
 <!--more-->
 
@@ -84,7 +89,7 @@ The MAE for predicting the entire building's consumption (with the ConEd Electri
 | Building | 23.50                     |
 
 
-[Plot of mean absolute error from validation](./html_plots/mean_absolute_error_by_meter_bar_plot.html)
+[Plot of mean absolute error from validation]({{ site.baseurl }}/html_plots/mean_absolute_error_by_meter_bar_plot.html)
 
 ### 4 What feature(s)/predictor(s) were most important in determining energy efficiency?
 
@@ -96,9 +101,9 @@ Although there are likely other factors at play, the most efficient operation oc
 
 The energy efficiency was higher during the week than on weekends which appears to be because the peak load during the day was decreased by a more significant percentage than the baseload overnight and on weekends.
 
-[Plot of before covid to during covid over a week](./html_plots/consumption_before_covid_during_covid_week_comparison.html)
+[Plot of before covid to during covid over a week]({{ site.baseurl }}/html_plots/consumption_before_covid_during_covid_week_comparison.html)
 
-[Plot of feature importances](./html_plots/feature_values.html)
+[Plot of feature importances]({{ site.baseurl }}/html_plots/feature_values.html)
 
 ### 5 What is the most energy-efficient occupancy level as a percentage of max occupancy provided (i.e., occupancy on 2/10/20)?
 
@@ -108,7 +113,7 @@ To measure energy efficiency while controlling for factors such as the time of t
 
 Although 5% was not the lowest overall occupancy, this level resulted in the most efficient operation. Above this occupancy, it appears the building was running more equipment to meet tenants' comfort requirements.
 
-[Plot of energy efficiency over time](./html_plots/energy_efficiency_over_time_scatter.html)
+[Plot of energy efficiency over time]({{ site.baseurl }}/html_plots/energy_efficiency_over_time_scatter.html)
 
 ### 6 What else, if anything, can be concluded from your model?
 
