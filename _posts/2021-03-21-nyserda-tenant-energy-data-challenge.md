@@ -7,6 +7,32 @@ categories:
   - energy
   - data-science
 ---
+<style>
+table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+</style>
 
 ![]({{ site.baseurl }}/images/before_vs_during_covid_consumption_comparison.png)
 
@@ -28,8 +54,9 @@ While some tenant meters surprisingly show an increase in consumption with a red
 
 The below stats show the expected change in consumption (positive values indicate a decrease in consumption) for every 10% decrease in occupancy.
 
-Tenant Meter | Decrease in consumption % for every 10% decrease in occupancy
+Tenant Meter | Consumption Decrease % for 10% Occupancy Decrease
 :--------------:|:---------------------------------------------------------------:
+Average      |  3.10
 1-001        |  4.15
 1-002        |  2.77
 1-003        |  2.97
@@ -51,7 +78,6 @@ Tenant Meter | Decrease in consumption % for every 10% decrease in occupancy
 Building     |  3.05
 
 
-
 On a technical note, the average Pearson's correlation coefficient (a standard method of measuring correlations) between the building-wide reduction in occupancy and tenant consumption is 0.60, a strongly positive correlation (as the reduction in occupancy increases, the reduction in consumption increases). As an interesting note, this value is negative for some meters, which display an increase in consumption with decreases in occupancy.
 
 [Plot of consumption change vs occupancy change]({{ site.baseurl }}/html_plots/consumption_change_vs_occupancy_change_scatter.html)
@@ -69,6 +95,7 @@ The MAE for predicting the entire building's consumption (with the ConEd Electri
 
  meter    | Mean Absolute Error (kWh)
 :----------:|:---------------------------:
+ Average  | 0.095
  1-001    | 0.10
  1-002    | 0.15
  1-003    | 0.05
