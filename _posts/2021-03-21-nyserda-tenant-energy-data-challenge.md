@@ -1,8 +1,8 @@
 ---
 published: true
-title: "NYSERDA Proptech Tenant Energy Data Challenge"
+title: "NYSERDA Tenant Energy Data Challenge"
 date: 2021-03-21
-permalink: /nyserda-proptech-tenant-energy-data-challenge/
+permalink: /nyserda-tenant-energy-data-challenge/
 categories:
   - energy
   - data-science
