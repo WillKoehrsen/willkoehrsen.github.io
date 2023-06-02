@@ -43,7 +43,7 @@ The F1 score is the harmonic mean of precision and recall taking both metrics in
 
 # Visualizing Precision and Recall
 
-I’ve thrown a couple new terms at you and we’ll walk through an example to show how they are used in practice. Before we can get there though we need to briefly talk about tw concepts used for showing precision and recall.
+I’ve thrown a couple new terms at you and we’ll walk through an example to show how they are used in practice. Before we can get there though we need to briefly talk about two concepts used for showing precision and recall.
 
 First up is the [confusion matrix](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/?) which is useful for quickly calculating precision and recall given the predicted labels from a model. A confusion matrix for binary classification shows the four different outcomes: true positive, false positive, true negative, and false negative. The actual values form the columns, and the predicted values (labels) form the rows. The intersection of the rows and columns show one of the four outcomes. For example, if we predict a data point is positive, but it actually is negative, this is a false positive.
 
