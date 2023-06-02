@@ -95,7 +95,7 @@ Our task will be to diagnose 100 patients with a disease present in 50% of the g
 ![](https://miro.medium.com/max/2000/1*3SjX3LaLUfJ3Yf7xU1QhmA.png?q=20)
 *Outcome of model at each threshold*
 
-We’ll do one sample calculation of the recall, precision, true positive rate, and false positive rate at athreshold of 0.5\. First we make the confusion matrix:
+We’ll do one sample calculation of the recall, precision, true positive rate, and false positive rate at a threshold of 0.5\. First we make the confusion matrix:
 
 ![](https://miro.medium.com/max/2000/1*gdLd_wAhNfJKH49NSfq72Q.png?q=20)
 *Confusion Matrix for Threshold of 0.5*
