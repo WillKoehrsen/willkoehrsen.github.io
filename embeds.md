@@ -1,0 +1,23 @@
+---
+layout: page
+title: Embeds (Testing)
+permalink: /embeds/
+published: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Iframe</title>
+</head>
+
+<body>
+  <h1>Dashboard View</h1>
+  <iframe src="https://www.gridstatus.io/dashboards/winter-storm-finn" width="800" height="600" title="Dashboard">
+  </iframe>
+</body>
+
+</html>
